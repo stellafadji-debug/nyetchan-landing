@@ -1,0 +1,243 @@
+<!DOCTYPE html><html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NYETCHAN – « Moi aussi je peux »</title>
+  <meta name="description" content="Programme NYETCHAN : autonomisation des jeunes filles au Togo via formation, stages et accompagnement." />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              brown: '#5c3a2e',
+              brownLight: '#7a4e3e',
+              beige: '#f7f1ec',
+              beige2: '#fbf7f4'
+            }
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(0,0,0,0.08)'
+          },
+          borderRadius: {
+            xl2: '1.25rem'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html{scroll-behavior:smooth}
+  </style>
+</head>
+<body class="bg-brand-beige text-brand-brown antialiased">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-brand-brown/10">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#top" class="inline-flex items-center gap-2 font-semibold tracking-wide text-brand-brown">
+        <span class="w-8 h-8 rounded-lg bg-brand-brown inline-grid place-content-center text-white">NY</span>
+        <span>NYETCHAN</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#programme" class="hover:opacity-80">Programme</a>
+        <a href="#objectif" class="hover:opacity-80">Objectifs</a>
+        <a href="#temoignages" class="hover:opacity-80">Témoignages</a>
+        <a href="#partenaires" class="hover:opacity-80">Partenaires</a>
+        <a href="#contact" class="hover:opacity-80">Contact</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="#inscription" class="hidden sm:inline-flex bg-brand-brown text-white px-4 py-2 rounded-xl shadow-soft hover:bg-brand-brownLight transition">Soutenir le programme</a>
+        <button class="md:hidden inline-flex p-2 rounded-lg border border-brand-brown/20" aria-label="Ouvrir le menu" onclick="document.getElementById('mobileNav').classList.toggle('hidden')">☰</button>
+      </div>
+    </div>
+    <!-- Mobile Nav -->
+    <div id="mobileNav" class="md:hidden hidden border-t border-brand-brown/10 bg-white">
+      <div class="max-w-6xl mx-auto px-4 py-3 grid gap-2 text-sm">
+        <a href="#programme" class="py-1">Programme</a>
+        <a href="#objectif" class="py-1">Objectifs</a>
+        <a href="#temoignages" class="py-1">Témoignages</a>
+        <a href="#partenaires" class="py-1">Partenaires</a>
+        <a href="#contact" class="py-1">Contact</a>
+        <a href="#inscription" class="py-2 mt-1 bg-brand-brown text-white text-center rounded-xl">Soutenir le programme</a>
+      </div>
+    </div>
+  </header>  <!-- Hero -->  <section id="top" class="relative">
+    <div class="absolute inset-0 -z-10 bg-[radial-gradient(1200px_600px_at_20%_-10%,#e7d9d1,transparent),linear-gradient(#f9f5f1,#f9f5f1)]"></div>
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-brand-brown">
+          NYETCHAN – « Moi aussi je peux »
+        </h1>
+        <p class="mt-4 text-brand-brown/80 text-lg">
+          Un programme qui redonne espoir et ouvre des perspectives aux jeunes filles vulnérables au Togo.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#partenaires" class="bg-brand-brown text-white px-5 py-3 rounded-xl hover:bg-brand-brownLight transition">Devenir partenaire</a>
+          <a href="#programme" class="border border-brand-brown px-5 py-3 rounded-xl hover:bg-white transition">Découvrir le programme</a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="aspect-[4/3] rounded-xl2 bg-brand-brown/10 border border-brand-brown/15 shadow-soft overflow-hidden grid place-content-center text-center p-6">
+          <div class="text-brand-brown/70">
+            <div class="text-sm uppercase tracking-widest mb-2">Aperçu visuel</div>
+            <div class="text-2xl font-semibold">Image / vidéo de formation</div>
+            <p class="mt-2 text-sm">Remplacer par votre visuel (Hero)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- Pourquoi / Objectif -->  <section id="objectif" class="py-16 md:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold">Pourquoi NYETCHAN ?</h2>
+        <p class="mt-4 text-brand-brown/80 leading-relaxed">
+          Face au manque d’opportunités, NYETCHAN accompagne les jeunes filles déscolarisées, étudiantes ou diplômées en quête d’avenir, afin de bâtir leur autonomie et leur confiance.
+        </p>
+        <a href="#inscription" class="inline-flex mt-6 bg-brand-brown text-white px-5 py-3 rounded-xl hover:bg-brand-brownLight transition">Je veux m’inscrire</a>
+      </div>
+      <div class="aspect-[4/3] rounded-xl2 bg-brand-brown/5 border border-brand-brown/15 grid place-content-center text-brand-brown/70">
+        <span>Photo de groupe en formation (placeholder)</span>
+      </div>
+    </div>
+  </section>  <!-- Ce que propose le programme -->  <section id="programme" class="py-16 md:py-24 bg-brand-beige2">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold">Ce que propose le programme</h2>
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        <!-- Item -->
+        <div class="p-6 rounded-2xl bg-white border border-brand-brown/10 shadow-soft">
+          <div class="w-10 h-10 rounded-lg bg-brand-brown/10 grid place-content-center mb-3">🎯</div>
+          <h3 class="font-semibold">Sélection & Appel à candidatures</h3>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border border-brand-brown/10 shadow-soft">
+          <div class="w-10 h-10 rounded-lg bg-brand-brown/10 grid place-content-center mb-3">🎓</div>
+          <h3 class="font-semibold">Formations pratiques & savoir‑être</h3>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border border-brand-brown/10 shadow-soft">
+          <div class="w-10 h-10 rounded-lg bg-brand-brown/10 grid place-content-center mb-3">💼</div>
+          <h3 class="font-semibold">Stages en entreprise (1 à 3 mois)</h3>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border border-brand-brown/10 shadow-soft">
+          <div class="w-10 h-10 rounded-lg bg-brand-brown/10 grid place-content-center mb-3">🤝</div>
+          <h3 class="font-semibold">Coaching & suivi individuel</h3>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border border-brand-brown/10 shadow-soft">
+          <div class="w-10 h-10 rounded-lg bg-brand-brown/10 grid place-content-center mb-3">📣</div>
+          <h3 class="font-semibold">Networking & opportunités d’emploi</h3>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- Impact prévu (version 2) -->  <section class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold">Impact prévu (2025–2026)</h2>
+      <div class="mt-8 p-8 bg-brand-brown text-white rounded-3xl shadow-soft">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+          <div><div class="text-4xl font-extrabold">200</div><div class="opacity-90">jeunes filles formées</div></div>
+          <div><div class="text-4xl font-extrabold">150</div><div class="opacity-90">stages réalisés</div></div>
+          <div><div class="text-4xl font-extrabold">100</div><div class="opacity-90">entreprises partenaires</div></div>
+          <div><div class="text-4xl font-extrabold">50</div><div class="opacity-90">projets lancés</div></div>
+          <div><div class="text-4xl font-extrabold">20</div><div class="opacity-90">embauches confirmées</div></div>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- Appel aux partenaires -->  <section id="partenaires" class="py-16 md:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-8 items-center">
+      <div class="p-8 rounded-2xl bg-brand-beige2 border border-brand-brown/10 shadow-soft">
+        <h3 class="text-2xl font-bold mb-3">Appel aux partenaires</h3>
+        <p class="text-brand-brown/80">Entreprises, ONG, institutions et particuliers : soutenez NYETCHAN. Activez votre RSE, valorisez votre impact social et révélez de futurs talents.</p>
+        <a href="#contact" class="inline-flex mt-6 bg-brand-brown text-white px-5 py-3 rounded-xl hover:bg-brand-brownLight transition">Rejoindre le programme</a>
+      </div>
+      <div class="p-8 rounded-2xl bg-white border border-brand-brown/10 shadow-soft">
+        <h3 class="text-2xl font-bold mb-3">Témoignage</h3>
+        <blockquote class="text-brand-brown/80">« Grâce à NYETCHAN, j’ai trouvé la confiance nécessaire pour lancer mon projet et décrocher un stage. »</blockquote>
+        <div class="mt-4 text-sm opacity-80">— Amina, participante</div>
+      </div>
+    </div>
+  </section>  <!-- Témoignages / Citations -->  <section id="temoignages" class="py-16 md:py-24 bg-brand-beige2">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold">Témoignages</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <figure class="p-6 bg-white rounded-2xl border border-brand-brown/10 shadow-soft">
+          <blockquote class="text-brand-brown/90">« Aujourd’hui, je suis fière d’avoir créé NYETCHAN, un programme qui redonne espoir et confiance aux jeunes filles vulnérables. »</blockquote>
+          <figcaption class="mt-4 text-sm opacity-80">Rachel Gblokpo, Fondatrice</figcaption>
+        </figure>
+        <figure class="p-6 bg-white rounded-2xl border border-brand-brown/10 shadow-soft">
+          <blockquote class="text-brand-brown/90">« J’ai pu suivre une formation pratique et réaliser un stage en entreprise. Je me sens prête pour l’emploi. »</blockquote>
+          <figcaption class="mt-4 text-sm opacity-80">Grace, participante</figcaption>
+        </figure>
+        <figure class="p-6 bg-white rounded-2xl border border-brand-brown/10 shadow-soft">
+          <blockquote class="text-brand-brown/90">« Le coaching m’a aidée à clarifier mon projet et à prendre confiance. »</blockquote>
+          <figcaption class="mt-4 text-sm opacity-80">Esther, participante</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>  <!-- Souscription au programme -->  <section id="inscription" class="py-16 md:py-24 bg-white">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold">Je suis une fille, je veux m’inscrire</h2>
+      <p class="mt-2 text-brand-brown/80">Rejoins la prochaine cohorte du programme NYETCHAN et bénéficie de formation, stage et accompagnement.</p>
+      <form class="mt-8 grid md:grid-cols-3 gap-4" onsubmit="fakeSubmit(event)">
+        <input required class="col-span-3 md:col-span-1 px-4 py-3 rounded-xl border border-brand-brown/20 focus:outline-none focus:ring-2 focus:ring-brand-brown/30" placeholder="Nom & Prénom" />
+        <input required type="number" min="12" max="30" class="col-span-3 md:col-span-1 px-4 py-3 rounded-xl border border-brand-brown/20 focus:outline-none focus:ring-2 focus:ring-brand-brown/30" placeholder="Âge" />
+        <input required class="col-span-3 md:col-span-1 px-4 py-3 rounded-xl border border-brand-brown/20 focus:outline-none focus:ring-2 focus:ring-brand-brown/30" placeholder="Niveau d’études" />
+        <input required class="col-span-3 md:col-span-2 px-4 py-3 rounded-xl border border-brand-brown/20 focus:outline-none focus:ring-2 focus:ring-brand-brown/30" placeholder="Téléphone / Email" />
+        <button class="col-span-3 md:col-span-1 bg-brand-brown text-white px-5 py-3 rounded-xl hover:bg-brand-brownLight transition">M’inscrire maintenant</button>
+      </form>
+      <p id="inscMsg" class="hidden mt-3 text-sm text-green-700">Merci ! Votre intérêt a été enregistré (démo). Connectez ce formulaire à Google Forms, Netlify Forms, Airtable ou Firebase pour la mise en production.</p>
+    </div>
+  </section>  <!-- Newsletter & Contact -->  <section id="contact" class="py-16 md:py-24 bg-brand-brown text-white">
+    <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-10 items-start">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold">Restez informé du lancement officiel en août 2025</h2>
+        <form class="mt-6 flex gap-3 max-w-xl" onsubmit="fakeSubmit(event)">
+          <input required type="email" placeholder="Votre email" class="flex-1 px-4 py-3 rounded-xl text-brand-brown placeholder:text-brand-brown/60" />
+          <button class="px-5 py-3 rounded-xl bg-white text-brand-brown font-semibold">S’inscrire</button>
+        </form>
+      </div>
+      <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+        <h3 class="text-xl font-semibold">Contacts</h3>
+        <ul class="mt-3 space-y-1/5">
+          <li class="opacity-90">Téléphone : <a href="tel:+22899010272" class="underline">+228 99 01 02 72</a> / <a href="tel:+22892376945" class="underline">92 37 69 45</a></li>
+          <li class="opacity-90">LinkedIn : <a href="https://www.linkedin.com/company/c-rel-accounting-admistrator-consulting/" target="_blank" rel="noopener" class="underline">Cabinet C‑REL</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>  <!-- Footer -->  <footer class="bg-brand-brown text-white">
+    <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-8 items-center">
+      <div class="flex items-center gap-3">
+        <!-- Logo C-REL placeholder -->
+        <div class="w-10 h-10 rounded-lg bg-white text-brand-brown grid place-content-center font-bold">CR</div>
+        <div>
+          <div class="font-semibold">Cabinet C‑REL</div>
+          <div class="text-sm opacity-80">Porteur du programme NYETCHAN</div>
+        </div>
+      </div>
+      <div class="text-sm opacity-90">
+        <div>Contacts : <a href="tel:+22899010272" class="underline">+228 99 01 02 72</a> / <a href="tel:+22892376945" class="underline">92 37 69 45</a></div>
+        <div>Mentions légales · Politique de confidentialité</div>
+      </div>
+      <div class="flex md:justify-end gap-3">
+        <!-- Social icons (SVG) -->
+        <a href="https://www.facebook.com" target="_blank" rel="noopener" class="p-2 rounded-lg bg-white/10 hover:bg-white/20" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2.3V12h2.3V9.7c0-2.3 1.4-3.6 3.5-3.6 1 0 2 .2 2 .2v2.2h-1.1c-1.1 0-1.5.7-1.5 1.4V12h2.6l-.4 2.9h-2.2v7A10 10 0 0 0 22 12Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/c-rel-accounting-admistrator-consulting/" target="_blank" rel="noopener" class="p-2 rounded-lg bg-white/10 hover:bg-white/20" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.5 8h4V23h-4V8Zm7.5 0h3.8v2.05h.06c.53-1 1.84-2.05 3.8-2.05 4.07 0 4.82 2.68 4.82 6.16V23h-4v-7.07c0-1.69-.03-3.87-2.36-3.87-2.36 0-2.72 1.84-2.72 3.74V23h-4V8Z"/></svg>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" class="p-2 rounded-lg bg-white/10 hover:bg-white/20" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.3 2.4.5.6.2 1 .5 1.5 1s.8.9 1 1.5c.2.5.4 1.2.5 2.4.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.9-.5 2.4-.2.6-.5 1-1 1.5s-.9.8-1.5 1c-.5.2-1.2.4-2.4.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.3-2.4-.5-.6-.2-1-.5-1.5-1s-.8-.9-1-1.5c-.2-.5-.4-1.2-.5-2.4C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.9.5-2.4.2-.6.5-1 1-1.5s.9-.8 1.5-1c.5-.2 1.2-.4 2.4-.5C8.4 2.2 8.8 2.2 12 2.2m0-2.2C8.7 0 8.3 0 7 0 5.7.1 4.8.3 4 .6 3.1.9 2.3 1.3 1.6 2.1 1 2.8.6 3.6.3 4.5.1 5.3 0 6.3 0 7.6v8.8c0 1.3.1 2.3.3 3.1.3.9.7 1.7 1.3 2.4.7.7 1.5 1 2.4 1.3.8.2 1.8.3 3.1.3 1.3.1 1.7.1 4.9.1s3.6 0 4.9-.1c1.3-.1 2.3-.3 3.1-.6.9-.3 1.7-.7 2.4-1.3.7-.7 1-1.5 1.3-2.4.2-.8.3-1.8.3-3.1.1-1.3.1-1.7.1-4.9s0-3.6-.1-4.9C23.9 5.7 23.7 4.8 23.4 4c-.3-.9-.7-1.7-1.3-2.4C21.4.9 20.6.6 19.7.3 18.9.1 17.9 0 16.6 0 15.3 0 14.3 0 12 0Z"/></svg>
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener" class="p-2 rounded-lg bg-white/10 hover:bg-white/20" aria-label="X">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M18.1 2h3.3l-7.2 8.2L22 22h-6.9l-5.4-7.1L3.4 22H.1l7.8-8.9L.3 2h7l4.9 6.5L18.1 2Zm-1.2 18.1h1.8L7.2 3.8H5.3l11.6 16.3Z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="border-t border-white/10 text-center text-xs py-4 opacity-80">© 2025 Programme NYETCHAN / Cabinet C‑REL. Tous droits réservés.</div>
+  </footer>  <script>
+    function fakeSubmit(e){
+      e.preventDefault();
+      const msg = document.getElementById('inscMsg');
+      if(msg){ msg.classList.remove('hidden'); }
+    }
+  </script></body>
+</html>
